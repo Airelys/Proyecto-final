@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2021-05-25" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="3.0.3000" locale="en_US">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="1" name="Funcionalidades de gerente" color="#8cb6ce" meeting="false" start="2021-05-25" duration="3" complete="40" thirdDate="2021-05-25" thirdDate-constraint="0" priority="2" expand="true">
+            <notes>
+                <![CDATA[Se terminara en este Sprint su implementacion ya que no se pudo concluir en el anterior, puesto que Alejandro ha tenido afectaciones con su salud, se encuentra con estafilococo en uno de sus ojos.
+Se realizaran las estadisticas y las sugerencias de peliculas]]>
+            </notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" name="Funcionalidades del Taquillero" color="#8cb6ce" meeting="false" start="2021-05-28" duration="4" complete="30" thirdDate="2021-05-28" thirdDate-constraint="0" priority="2" expand="true">
+            <notes>
+                <![CDATA[Se terminara en este Sprint su implementacion ya que no se pudo concluir en el anterior, puesto que Airelys tuvo problemas de salud.]]>
+            </notes>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" name="Funcionalidades de los usuarios" color="#8cb6ce" meeting="false" start="2021-06-03" duration="4" complete="0" thirdDate="2021-06-03" thirdDate-constraint="0" priority="2" expand="true">
+            <notes>
+                <![CDATA[Se desarrollaran todas las funcionalidades de este, como es ser socio, comprar, pagar con puntos, cancelar compra, entre otras]]>
+            </notes>
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="Revision de todo lo realizado" color="#8cb6ce" meeting="false" start="2021-06-09" duration="3" complete="0" thirdDate="2021-06-09" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Se hara el unit testing, ademas de una revision detallada de todo.]]>
+            </notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Airelys Collazo" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Alejandro Escobar" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Henri Daniel Pena" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="David Cabrera" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="9" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="2" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="3" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

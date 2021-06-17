@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2021-04-26" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="3.0.3000" locale="en_US">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="167" order="0"/>
+        <field id="tpd4" name="Begin date" width="65" order="1"/>
+        <field id="tpd5" name="End date" width="64" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Documentarse" color="#8cb6ce" meeting="false" start="2021-04-27" duration="4" complete="60" thirdDate="2021-04-27" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Se leyo mucha bibligrafia como el Freeman, se buscaron links y paginas que fueran de ayuda para el proyecto.
+Se profundizo en los requerimientos que se pedian como son trabajar con asp.net core y sqlite]]>
+            </notes>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="Crear la arquitectura" color="#8cb6ce" meeting="false" start="2021-05-03" duration="3" complete="80" thirdDate="2021-05-03" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Se creo una arquitectura de cebolla que consta de 4 capas, pues una arquitectura desacoplada y organizada]]>
+            </notes>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" name="Modelar la base de datos" color="#8cb6ce" meeting="false" start="2021-05-06" duration="5" complete="80" thirdDate="2021-05-06" thirdDate-constraint="0" priority="4" expand="true">
+            <notes>
+                <![CDATA[Despues de mucho pensar se modelo la base de datos, fue un trabajo bastante dificil, pues se necesita una perspectiva futura de lo que te puede hacer falta]]>
+            </notes>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Airelys" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Alejandro" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Henri" function="Default:0" contacts="" phone=""/>
+        <resource id="3" name="David" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2021-04-27" end="2021-06-08" resourceid="0"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
