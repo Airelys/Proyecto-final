@@ -1,0 +1,99 @@
+﻿@using Movie_PlusPlus.Roles;
+@model bool[,];
+
+
+<table>
+    <tr>
+        <th>
+            TOTAL :
+        </th>
+        <th>
+            @ViewBag.Total
+        </th>
+    </tr>
+</table>
+<br/>
+<form action="" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Rows/Columns
+                </th>
+                @for (int i = 0; i < Model.GetLength(1); i++)
+                {
+                    <th>
+                        @(i+1)
+                    </th>
+                }
+
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @{int noEnt = ViewBag.noEnt; }
+
+            @for (int i = 0; i < Model.GetLength(0); i++)
+            {
+                <tr>
+                    <td>
+                        @(i+1)
+                    </td>
+
+                    @for (int j = 0; j < Model.GetLength(1); j++)
+                    {
+                        if (!Model[i, j])
+                        {
+                            if (noEnt > 0)
+                            {
+                                noEnt--;
+                                <td>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input name="@i,@j" class="form-check-input" asp-for="IsReadOnly" checked="checked" />
+                                        </label>
+                                    </div>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input name="@i,@j" class="form-check-input" asp-for="IsReadOnly" />
+                                        </label>
+                                    </div>
+                                </td>
+                            }
+                        }
+                        else
+                        {
+                            <td>
+                                Reserved
+                            </td>
+                        }
+
+
+                    }
+                </tr>
+            }
+
+            @if (ViewData.ContainsKey("Error"))
+            {
+                @:<script>alert('@ViewData["Error"]');</script>
+            }
+        </tbody>
+    </table>
+    @if (User.IsInRole(Roles.Basic_User.ToString()))
+    {
+        <input type="submit" name="Buy" value="Pay With Credit Card" />
+    }
+    @if(User.IsInRole(Roles.Ticket_Agent.ToString()))
+    {
+        <input type="submit" name="PayInTicketOffice" value="Pay In Ticket Office" />
+    }
+
+
+    <a asp-controller="Horaries" asp-action="Index">Cancel</a>
+</form>

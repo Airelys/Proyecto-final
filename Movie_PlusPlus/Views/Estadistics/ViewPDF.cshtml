@@ -1,0 +1,68 @@
+﻿
+@using Movie_Plus.Services.Estadistic
+@model IEnumerable<EstadisticViewModel>
+
+@{
+    ViewData["Title"] = "ViewPDF";
+}
+
+<h1>Estadistics</h1>
+
+<a asp-action="PDF">PDF</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Kind of movie
+            </th>
+            <th>
+                Duration
+            </th>
+            <th>
+                Country
+            </th>
+            <th>
+                Actors
+            </th>
+            <th>
+                Ranking
+            </th>
+            <th>
+                Number Of Entrance
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KindOfMovie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Actors)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ranking)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalOfEntrance)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

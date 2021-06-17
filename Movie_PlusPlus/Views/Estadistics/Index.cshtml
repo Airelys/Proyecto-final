@@ -1,0 +1,183 @@
+﻿@using Movie_Plus.Services.Pager
+@using Movie_Plus.Services.Estadistic
+
+@model GenericPager<EstadisticViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Estadistics</h1>
+
+@*CÓDIGO PARA EL FILTRO DE BÚSQUEDA*@
+<div class="text-right form-inline">
+    <form method="get" action=@Url.Action("Index", "Estadistics" )>
+        <div class="form-group">
+            @Html.TextBox("_title", null, new
+            {
+                placeholder = "Title",
+                @class = "form-control"
+            })
+
+            @Html.TextBox("_country", null, new
+            {
+                placeholder = "Country",
+                @class = "form-control "
+            })
+
+            @Html.TextBox("_kindOfMovie", null, new
+            {
+                placeholder = "KindOfMovie",
+                @class = "form-control "
+            })
+
+            @Html.TextBox("_duration", null, new
+            {
+            placeholder = "Duration",
+            @class = "form-control numbers",
+            @oninput = "this.value=this.value.replace(/[^0-9]/g,'')"
+            })
+
+            @Html.TextBox("_ranking", null, new
+            {
+            placeholder = "Ranking",
+            @class = "form-control numbers",
+            @oninput = "this.value=this.value.replace(/[^0-9]/g,'')"
+            })
+
+            @Html.TextBox("_actor", null, new
+            {
+                placeholder = "Actor",
+                @class = "form-control "
+            })
+
+            Min Date: <div class="form-group">
+                <label class="control-label"></label>
+                <input name="_minDate" type="date" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+
+            Max Date: <div class="form-group">
+                <label class="control-label"></label>
+                <input name="_maxDate" type="date" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+
+        </div>
+        <button class="btn btn-default" type="submit">Search</button>
+    </form>
+</div>
+
+<a asp-action="ViewPDF">View PDF</a>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Kind of movie
+            </th>
+            <th>
+                Duration
+            </th>
+            <th>
+                Country
+            </th>
+            <th>
+                Actors
+            </th>
+            <th>
+                Ranking
+            </th>
+            <th>
+                Number Of Entrance
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Result)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KindOfMovie)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Country)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Actors)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ranking)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalOfEntrance)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@*PAGER*@
+
+@if (Model.Result.Count() > 0)
+{
+    <span>
+        <strong>@Model.TotalRegisters</strong> Registers found
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+    <span>
+        Page <strong>@(Model.ActualPage)</strong> of
+        <strong>@Model.TotalPages</strong>
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+}
+else
+{
+    <span>No results</span>
+    <span>&nbsp;|&nbsp;</span>
+}
+
+@if (Model.ActualPage > 1)
+{
+    @Html.ActionLink("<<", "Index", new { page = 1 },
+                    new { @class = "btn btn-sm btn-default" })
+    <span></span>
+    @Html.ActionLink("Previous", "Index", new { page = Model.ActualPage - 1 },
+                    new { @class = "btn btn-sm btn-default" })
+}
+else
+{
+    @Html.ActionLink("<<", "Index", new { page = 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+    <span></span>
+    @Html.ActionLink("Previous", "Index", new { page = 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+}
+<span></span>
+@if (Model.ActualPage < Model.TotalPages)
+{
+    @Html.ActionLink("Next", "Index", new { page = Model.ActualPage + 1 },
+                    new { @class = "btn btn-sm btn-default" })
+    <span></span>
+    @Html.ActionLink(">>", "Index", new { page = Model.TotalPages },
+                    new { @class = "btn btn-sm btn-default" })
+}
+else
+{
+    @Html.ActionLink("Next", "Index", new { page = Model.TotalPages - 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+    <span></span>
+    @Html.ActionLink(">>", "Index", new { page = Model.TotalPages },
+                    new { @class = "btn btn-sm btn-default disabled" })
+}
+

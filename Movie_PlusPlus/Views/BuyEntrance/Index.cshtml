@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Movie_Plus.Data.UserType>
+
+<form action="SelectSeats" method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Discount)
+                </th>
+                <th>
+                    Entrance per User
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Discount)
+                    </td>
+                    <td>
+                        <input type="number" name="@item.Type" min="0" size="1" value="@ViewData[item.Type]" />
+
+                    </td>
+                </tr>
+
+            }
+            @if (ViewData.ContainsKey("Error"))
+            {
+                @:<script>alert('@ViewData["Error"]');</script>
+            }
+
+        </tbody>
+    </table>
+    <input type="submit" value="OK" />
+
+</form>
+
+<a asp-controller="Horaries" asp-action="Index">Cancel</a>
+
+
+
+

@@ -1,0 +1,215 @@
+h1 {
+	text-shadow: 3px 2px white;
+	text-align: center
+}
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	text-align: right;
+	padding: 15px;
+	width: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	border-radius: 0 5px 5px 0;
+	margin-top: 300px
+}
+#mySidenav a:hover {
+	left: 0;
+}
+#about {
+	top: 20px;
+	background-color: #231E1E;
+}
+#blog {
+	top: 80px;
+	background-color: #231E1E;
+}
+#projects {
+	top: 140px;
+	background-color: #231E1E;
+}
+body {
+	background-image: url('../images/Foto33fabrica01.jpg')
+}
+#myImg:hover {
+	opacity: 0.9;
+}
+
+@media (min-width:601px) {
+.w3-col.m1 {
+	width: 8.33333%
+}
+.w3-col.m2 {
+	width: 16.66666%
+}
+.w3-col.m3, .w3-quarter {
+	width: 24.99999%
+}
+.w3-col.m4, .w3-third {
+	width: 33.33333%
+}
+.w3-col.m5 {
+	width: 41.66666%
+}
+.w3-col.m6, .w3-half {
+	width: 49.99999%
+}
+.w3-col.m7 {
+	width: 58.33333%
+}
+.w3-col.m8, .w3-twothird {
+	width: 66.66666%
+}
+.w3-col.m9, .w3-threequarter {
+	width: 74.99999%
+}
+.w3-col.m10 {
+	width: 83.33333%
+}
+.w3-col.m11 {
+	width: 91.66666%
+}
+.w3-col.m12 {
+	width: 99.99999%
+}
+}
+
+@media (min-width:993px) {
+.w3-col.l1 {
+	width: 8.33333%
+}
+.w3-col.l2 {
+	width: 16.66666%
+}
+.w3-col.l3 {
+	width: 24.99999%
+}
+.w3-col.l4 {
+	width: 33.33333%
+}
+.w3-col.l5 {
+	width: 41.66666%
+}
+.w3-col.l6 {
+	width: 49.99999%
+}
+.w3-col.l7 {
+	width: 58.33333%
+}
+.w3-col.l8 {
+	width: 66.66666%
+}
+.w3-col.l9 {
+	width: 74.99999%
+}
+.w3-col.l10 {
+	width: 83.33333%
+}
+.w3-col.l11 {
+	width: 91.66666%
+}
+.w3-col.l12 {
+	width: 99.99999%
+}
+}
+.w3-content {
+	max-width: 980px;
+	margin: auto
+}
+.w3-rest {
+	overflow: hidden
+}
+.w3-cell-row {
+	display: table;
+	width: 100%
+}
+.w3-cell {
+	display: table-cell
+}
+.w3-cell-top {
+	vertical-align: top
+}
+.w3-cell-middle {
+	vertical-align: middle
+}
+.w3-cell-bottom {
+	vertical-align: bottom
+}
+.w3-hide {
+	display: none!important
+}
+.w3-show-block, .w3-show {
+	display: block!important
+}
+.w3-show-inline-block {
+	display: inline-block!important
+}
+
+@media (max-width:600px) {
+.w3-modal-content {
+	margin: 0 10px;
+	width: auto!important
+}
+.w3-modal {
+	padding-top: 30px
+}
+.w3-dropdown-hover.w3-mobile .w3-dropdown-content, .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+	position: relative
+}
+.w3-hide-small {
+	display: none!important
+}
+.w3-mobile {
+	display: block;
+	width: 100%!important
+}
+.w3-bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile {
+	text-align: center
+}
+.w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button {
+	width: 100%
+}
+}
+
+@media (max-width:768px) {
+.w3-modal-content {
+	width: 500px
+}
+.w3-modal {
+	padding-top: 50px
+}
+}
+
+@media (min-width:993px) {
+.w3-modal-content {
+	width: 900px
+}
+.w3-hide-large {
+	display: none!important
+}
+.w3-sidebar.w3-collapse {
+	display: block!important
+}
+}
+
+@media (max-width:992px) and (min-width:601px) {
+.w3-hide-medium {
+	display: none!important
+}
+}
+
+@media (max-width:992px) {
+.w3-sidebar.w3-collapse {
+	display: none
+}
+.w3-main {
+	margin-left: 0!important;
+	margin-right: 0!important
+}
+}
+.w3-image {
+	max-width: 100%;
+	height: auto
+}

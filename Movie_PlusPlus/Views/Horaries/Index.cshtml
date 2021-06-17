@@ -1,0 +1,223 @@
+﻿@model Movie_Plus.Services.Pager.GenericPager<Movie_Plus.Data.Horary>
+@using Movie_PlusPlus.Roles;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Horaries</h1>
+
+@*CÓDIGO PARA EL FILTRO DE BÚSQUEDA*@
+<div class="text-right form-inline">
+    <form method="get" action=@Url.Action("Index", "Horaries" )>
+        <div class="form-group">
+            @Html.TextBox("_title", null, new
+            {
+                placeholder = "Title",
+                @class = "form-control"
+            })
+
+            @Html.TextBox("_localName", null, new
+            {
+                placeholder = "Local Name",
+                @class = "form-control "
+            })
+
+            @Html.TextBox("_price", null, new
+            {
+                placeholder = "Price",
+                @class = "form-control "
+            })
+
+        </div>
+        <div class="form-group">
+
+            @Html.TextBox("_priceInPoints", null, new
+            {
+            placeholder = "Price in Points",
+            @class = "form-control numbers",
+            @oninput = "this.value=this.value.replace(/[^0-9]/g,'')"
+            })
+
+            Min Date: <div class="form-group">
+                <label class="control-label"></label>
+                <input name="_minDate" type="date" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+
+            Max Date: <div class="form-group">
+                <label class="control-label"></label>
+                <input name="_maxDate" type="date" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+
+        </div>
+        <button class="btn btn-default" type="submit">Search</button>
+    </form>
+</div>
+
+@if (User.IsInRole(Roles.Manager.ToString()) || User.IsInRole(Roles.Admin.ToString()))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Reserved Tickets
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Price In Points
+            </th>
+            <th>
+                Points For Buying
+            </th>
+            <th>
+                Movie
+            </th>
+            <th>
+                Movie_Local
+            </th>
+            <th>
+                Select Horary
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Result)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReservedTickets)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PriceInPoints)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PointsForBuying)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Movie.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Movie_Local.Local_Name)
+                </td>
+
+                @if (DateTime.Now < new DateTime(item.Date.Year,
+                                   item.Date.Month,
+                                   item.Date.Day,
+                                   item.Time.Hour - 1,
+                                   item.Time.Minute,
+                                   item.Date.Second))
+                {
+                    <td>
+                        <a asp-controller="BuyEntrance" asp-action="Index" asp-route-id="@item.Id">Select</a>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        Select
+                    </td>
+                }
+            <td>
+                @if (User.IsInRole(Roles.Manager.ToString()) || User.IsInRole(Roles.Admin.ToString()))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> @Html.Display("|")
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a> @Html.Display("|")
+                }
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> 
+
+
+            </td>
+            </tr>
+        }
+
+        @if (TempData.ContainsKey("Error"))
+        {
+            @:<script>alert('@TempData["Error"]');</script>
+        }
+
+        @if (TempData.ContainsKey("msg"))
+        {
+            @:<script>alert('@TempData["msg"]');</script>
+        }
+
+    </tbody>
+</table>
+
+@*PAGER*@
+
+@if (Model.Result.Count() > 0)
+{
+    <span>
+        <strong>@Model.TotalRegisters</strong> Registers found
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+    <span>
+        Page <strong>@(Model.ActualPage)</strong> of
+        <strong>@Model.TotalPages</strong>
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+}
+else
+{
+    <span>No results</span>
+    <span>&nbsp;|&nbsp;</span>
+}
+
+@if (Model.ActualPage > 1)
+{
+    @Html.ActionLink("<<", "Index", new { page = 1 },
+                    new { @class = "btn btn-sm btn-default" })
+    <span></span>
+    @Html.ActionLink("Previous", "Index", new { page = Model.ActualPage - 1 },
+                    new { @class = "btn btn-sm btn-default" })
+}
+else
+{
+    @Html.ActionLink("<<", "Index", new { page = 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+    <span></span>
+    @Html.ActionLink("Previous", "Index", new { page = 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+}
+<span></span>
+@if (Model.ActualPage < Model.TotalPages)
+{
+    @Html.ActionLink("Next", "Index", new { page = Model.ActualPage + 1 },
+                    new { @class = "btn btn-sm btn-default" })
+    <span></span>
+    @Html.ActionLink(">>", "Index", new { page = Model.TotalPages },
+                    new { @class = "btn btn-sm btn-default" })
+}
+else
+{
+    @Html.ActionLink("Next", "Index", new { page = Model.TotalPages - 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+    <span></span>
+    @Html.ActionLink(">>", "Index", new { page = Model.TotalPages },
+                    new { @class = "btn btn-sm btn-default disabled" })
+}

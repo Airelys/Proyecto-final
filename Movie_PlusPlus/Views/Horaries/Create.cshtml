@@ -1,0 +1,63 @@
+﻿@model Movie_Plus.Data.Horary
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Horary</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Movie" class="control-label"></label>
+                <select asp-for="Movie" class="form-control" asp-items="ViewBag.Movie"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie_Local" class="control-label"></label>
+                <select asp-for="Movie_Local" class="form-control" asp-items="ViewBag.Movie_Local"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" min="@DateTime.Today" type="date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Time" class="control-label"></label>
+                <input asp-for="Time" class="form-control" />
+                <span asp-validation-for="Time" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" min="0" pattern="/^[0-9]+/" value="50" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PriceInPoints" class="control-label"></label>
+                <input asp-for="PriceInPoints" min="0" pattern="/^[0-9]+/" value="20" class="form-control" />
+                <span asp-validation-for="PriceInPoints" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PointsForBuying" class="control-label"></label>
+                <input asp-for="PointsForBuying" min="0" pattern="/^[0-9]+/" value="5" class="form-control" />
+                <span asp-validation-for="PointsForBuying" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (ViewData.ContainsKey("msg"))
+{
+    @:<script>alert('@ViewData["msg"]');</script>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Movie_Plus.Data.Movie_Local>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Movie Local</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Local_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rows)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Columns)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Local_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rows)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Columns)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,30 @@
+﻿@model List<string>
+
+
+<h1>Voucher</h1>
+
+@{string value = ""; }
+
+@foreach (var _string in Model)
+{
+    foreach (var item in _string)
+    {
+        if (item == '\n')
+        {
+            <h4>@value</h4>
+            <br />
+            value = "";
+            continue;
+        }
+
+        value += item;
+    }
+}
+@if (TempData.ContainsKey("Success"))
+{
+    @:<script>alert('@TempData["Success"]');</script>
+}
+<a asp-action="PDF">Download</a>
+<br />
+<a asp-action="Index" asp-controller="Horaries">Back</a>
+

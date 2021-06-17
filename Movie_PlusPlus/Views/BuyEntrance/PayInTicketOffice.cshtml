@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "PayInTicketOffice";
+}
+
+<h1>Pay in Ticket Office</h1>
+<hr />
+
+<div style="margin-bottom: 10px;">
+    <span class="key" style="color: #dc0000;"></span>
+    <span id="onlineTime"></span>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="PayInTicketOffice">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            Insert cash here:
+            <div class="form-group">
+                <label class="control-label"></label>
+                <input name="cash" min=0 type="number" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+
+            Insert code of movie member here:
+            <div class="form-group">
+                <label class="control-label"></label>
+                <input name="code" min=0 type="number" class="form-control" />
+                <span class="text-danger"></span>
+            </div>
+            @if (ViewData.ContainsKey("msg"))
+            {
+                @:<script>alert('@ViewData["msg"]');</script>
+            }
+            <div class="form-group">
+                <input type="submit" value="OK" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<a asp-action="Cancel">Cancel</a>
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+        //显示在线时间
+        function $$(tt) { return tt < 10 ? "0" + tt : tt; };
+        var today = new Date();
+        var hour = $$(today.getHours());
+
+        var minu = $$(today.getMinutes());
+        var second = $$(today.getSeconds());
+        var total = @ViewBag.Time;
+        var actime = 'null';
+        if ('notFound.jsp' != 'notFound.jsp') {
+            var newWnd = window.open("notFound.jsp", "_blank"); newWnd.opener = null;
+        }
+        function set() {
+            var loginTime = total - parseInt((new Date().getTime() - today.getTime()) / 1000);
+            if (actime > 0) {
+                setonTime(actime);
+                actime++;
+            }
+            else if (loginTime > 0) {
+                setonTime(loginTime);
+            }
+        }
+        setInterval(set, 1000);
+        function setonTime(loginTime) {
+            var hours = 0;
+            var minutes = 0;
+            var seconds = 0;
+
+            hours = Math.floor(loginTime / 3600);
+            minutes = Math.floor((loginTime % 3600) / 60);
+            seconds = loginTime % 60;
+
+            if (hours <= 9) {
+                hours = "0" + hours;
+            }
+            if (minutes <= 9) {
+                minutes = "0" + minutes;
+            }
+            if (seconds <= 9) {
+                seconds = "0" + seconds;
+            }
+            var cdate = hours + ":" + minutes + ":" + seconds;
+
+            document.getElementById('onlineTime').innerHTML = cdate;
+
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("availableTime").innerHTML = "12:00:00";
+            updateAvailableTime();
+            set();
+        }
+    </script>
+}

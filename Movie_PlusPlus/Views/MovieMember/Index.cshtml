@@ -1,0 +1,48 @@
+﻿@model Movie_Plus.Data.ApplicationUser
+
+@{
+    ViewData["Title"] = "MovieMember";
+}
+
+<h1>Register as a Movie Member</h1>
+
+<h4>Movie Member</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Id</label>
+                <input type="number" name="IdentificationNumber" class="form-control"  min="0"/>
+            </div>
+
+            @if (ViewData.ContainsKey("IsTicketAgent") && ViewData["IsTicketAgent"].Equals(true))
+            {
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" type ="email" class="text-danger"></span>
+                </div>
+            }
+
+            <div class="form-group">
+                <input type="submit" value="Join" class="btn btn-primary" />
+            </div>
+            @if (ViewData.ContainsKey("Error"))
+            {
+                @:<script>alert('@ViewData["Error"]');</script>
+            }
+        </form>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.deps.json
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.runtimeconfig.json
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.runtimeconfig.dev.json
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.AssemblyInfoInputs.cache
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.AssemblyInfo.cs
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.genruntimeconfig.cache
+C:\Users\Ale\source\repos\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.csprojAssemblyReference.cache
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.deps.json
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.runtimeconfig.json
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.runtimeconfig.dev.json
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.csprojAssemblyReference.cache
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.AssemblyInfoInputs.cache
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.AssemblyInfo.cs
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.genruntimeconfig.cache
