@@ -22,3 +22,15 @@ C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\net
 C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.dll
 C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
 C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.genruntimeconfig.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.deps.json
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.runtimeconfig.json
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.runtimeconfig.dev.json
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\bin\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.csprojAssemblyReference.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.AssemblyInfoInputs.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.AssemblyInfo.cs
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.csproj.CoreCompileInputs.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Data\obj\Debug\netcoreapp3.1\Movie_Plus.Data.genruntimeconfig.cache

@@ -31,6 +31,9 @@ namespace Movie_PlusPlus
                     await ContextSeed.SeedRolesAsync(userManager, roleManager);
                     await ContextSeed.SeedAdminAsync(userManager, roleManager);
                     await ContextSeed.SeedNormalUserType(context);
+                    await ContextSeed.SeedUsers(userManager, roleManager);
+                    await ContextSeed.SeedMovies(context);
+                    await ContextSeed.SeedMovie_Local(context);
                 }
                 catch (Exception ex)
                 {

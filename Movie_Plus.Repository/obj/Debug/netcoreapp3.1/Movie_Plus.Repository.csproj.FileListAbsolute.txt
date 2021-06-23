@@ -28,3 +28,18 @@ C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Repository\obj\Deb
 C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.dll
 C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.pdb
 C:\Users\Ale\Desktop\Proyecto final\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.genruntimeconfig.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Repository.deps.json
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Repository.runtimeconfig.json
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Repository.runtimeconfig.dev.json
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Repository.dll
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Repository.pdb
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Data.dll
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\bin\Debug\netcoreapp3.1\Movie_Plus.Data.pdb
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.csprojAssemblyReference.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.AssemblyInfoInputs.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.AssemblyInfo.cs
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.csproj.CopyComplete
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.dll
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.pdb
+C:\Users\Airelys\Desktop\New folder (4)\New folder (3)\Movie_PlusPlus\Movie_Plus.Repository\obj\Debug\netcoreapp3.1\Movie_Plus.Repository.genruntimeconfig.cache

@@ -9,7 +9,7 @@ using Movie_Plus.Repository;
 namespace Movie_Plus.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210616072759_initial")]
+    [Migration("20210623063454_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

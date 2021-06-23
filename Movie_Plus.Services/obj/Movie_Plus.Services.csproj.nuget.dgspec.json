@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj": {}
+    "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj": {
+    "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj",
         "projectName": "Movie_Plus.Data",
-        "projectPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj",
-        "packagesPath": "C:\\Users\\Ale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\obj\\",
+        "projectPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj",
+        "packagesPath": "C:\\Users\\Airelys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ale\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Airelys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -101,22 +97,18 @@
         }
       }
     },
-    "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj": {
+    "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj",
         "projectName": "Movie_Plus.Repository",
-        "projectPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj",
-        "packagesPath": "C:\\Users\\Ale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj",
+        "packagesPath": "C:\\Users\\Airelys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ale\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Airelys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -129,8 +121,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj": {
-                "projectPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj"
+              "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj": {
+                "projectPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj"
               }
             }
           }
@@ -202,22 +194,18 @@
         }
       }
     },
-    "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj": {
+    "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj",
         "projectName": "Movie_Plus.Services",
-        "projectPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj",
-        "packagesPath": "C:\\Users\\Ale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Services\\obj\\",
+        "projectPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Services\\Movie_Plus.Services.csproj",
+        "packagesPath": "C:\\Users\\Airelys\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Services\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Ale\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Airelys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -230,11 +218,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj": {
-                "projectPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj"
+              "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj": {
+                "projectPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Data\\Movie_Plus.Data.csproj"
               },
-              "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj": {
-                "projectPath": "C:\\Users\\Ale\\Desktop\\Proyecto final\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj"
+              "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj": {
+                "projectPath": "C:\\Users\\Airelys\\Desktop\\New folder (4)\\New folder (3)\\Movie_PlusPlus\\Movie_Plus.Repository\\Movie_Plus.Repository.csproj"
               }
             }
           }
